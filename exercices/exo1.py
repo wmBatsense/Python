@@ -5,11 +5,11 @@ while t <= 9:
     t+=1
     print(t)
 print("#########boucle for ###########")
-t=0
-for t in range(10):
-    if t == 10: break
-    t+=1
+
+for t in range(11):
+    if t == 11: break
     print(t)
+    
 print("#########Fonction affiche mots ###########")
 entier=[0,1,2,3,4,5,6,7,8,9,10]
 mots=["salut","j'apprend","python","en","formation","c'est","pas","mal","merci","Docapost","A bientot :)"]
