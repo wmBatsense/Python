@@ -1,30 +1,38 @@
 #! /usr/bin/env Python3 
-t=0
-print("######### boucle fwhile ###########")
+entiers=[]
+mots=["salut","j'apprend","python","en","formation","c'est","pas","mal","merci","Docapost","A bientot :)"]    
+#########boucle for ###########
 
-while t <= 9:
-    t+=1
-    print(t)
-    
-print("#########boucle for ###########")
+def display_for():
+    for t in range(1,11,1):
+        if t == 11: break
+        print(f'func for: {t}')
+print("#########Fonction boucle for ###########")  
+display_for()
 
-for t in range(11):
-    if t == 11: break
-    print(t)
-    
-print("#########Fonction affiche nombre ###########")   
-def displayint(counter):
+#########boucle while ###########"  
+def display_while(counter):
     t=0
     while t <= counter:
         t+=1
-        print(f'func: {t}')
-displayint(9)
+        print(f'func while: {t}')
+print("#########Fonction boucle while ###########")  
+display_while(9)
 
-print("#########Fonction affiche mots ###########")
-entier=[0,1,2,3,4,5,6,7,8,9,10]
-mots=["salut","j'apprend","python","en","formation","c'est","pas","mal","merci","Docapost","A bientot :)"]
+#########Fonction affiche entiers ###########
+def affiche_entiers(tableau):
+    global entiers
+    for t in range(1,tableau,1):
+        if t == 11: break
+        print(t)
+        entiers.append(t)
+#########Fonction affiche mots ###########
 def affichemots():
-    for k in entier:
+    for k in entiers:
         print(f'func: {mots[k]}')
-
+        
+#########Appel de fonction ###########
+print("#########Fonction affiche entiers ###########")    
+affiche_entiers(len(mots))
+print("#########Fonction affiche mots ###########")
 affichemots()
