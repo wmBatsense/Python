@@ -12,7 +12,7 @@ print("essaye de trouver le nombre secret en peu de tentative")
 
 while True:
     nombre = input("Entrez un chiffre:")
-    if type(nombre) == int:
+    if type(nombre) != int:
       print("Petit malin c'est un nombre qui faut :)")  
     compteur_tentative +=1
     if int(nombre) == chiffre_secret :
