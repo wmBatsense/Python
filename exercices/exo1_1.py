@@ -14,6 +14,7 @@ while True:
     nombre = input("Entrez un chiffre:")
     if type(nombre) != int:
       print("Petit malin c'est un nombre qui faut :)")  
+      continue
     compteur_tentative +=1
     if int(nombre) == chiffre_secret :
         print(f'Super tu as trouvé en {compteur_tentative} tentative et {int(now % 60)} seconde')  
