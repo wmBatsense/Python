@@ -3,3 +3,10 @@ for m in month :
     if m > 6:
         break
     print(f'le {m} est le mois {month[m]}')
+    
+#Items function
+print("################## Function Items ################")
+for k,v  in month.items() :
+    if k > 6:
+        break
+    print(f'le {k} est le mois {v}')
