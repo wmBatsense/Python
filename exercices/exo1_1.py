@@ -24,6 +24,6 @@ while True:
     if int(nombre) > chiffre_secret:
         print(f'Humm chiffre trop haut')
         continue
-    if int(nombre) > 10:
+    if int(compteur_tentative) > 10:
         print(f'Humm tu es à la {compteur_tentative} tentative')
         continue
