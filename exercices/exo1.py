@@ -12,10 +12,11 @@ display_for()
 
 #########boucle while ###########"  
 def display_while(counter):
-    t=0
-    while t <= counter:
-        t+=1
+    t=1
+    while t <= 10:
         print(f'func while: {t}')
+        t+=1
+        
 print("#########Fonction boucle while ###########")  
 display_while(9)
 
