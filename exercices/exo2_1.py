@@ -6,8 +6,10 @@ def ajout_commentaire(file):
     for x in f:
         content += "#ma ligne de commentaire\n"
         content +=x
+    f.close()
     file = open(file,"w+")
     file.write(content)
+    file.close()
     
 ajout_commentaire("test.txt")
 
@@ -25,4 +27,5 @@ def compte_ligne_fichier(file):
     print(f'nombre de lignes : {nb_ligne}')
     print(f'nombre de mots : {nb_mots}')
     print(f'nombre de caractères : {nb_caractere}')
+    
 compte_ligne_fichier("test.txt")
