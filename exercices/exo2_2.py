@@ -22,7 +22,7 @@ def recupere_resultat(nom,moyenne,etudiant):
         f.write(f"Prénom : {etudiant[0]}\n")
         f.write(f"Âge : {etudiant[1]}\n")
         f.write(f"Moyenne : {etudiant[2]}\n")
-    except:
+    except FileNotFoundError:
       print('Fichier de resultat introuvable !')
 
         
@@ -39,7 +39,7 @@ def format_csv(fichier):
                 key, values = x[0], (x[1], x[2], x[3])
                 resultat[key] = values
         return resultat
-    except:
+    except FileNotFoundError:
       print("Fichier d'entrée introuvable !")
         
 calcul_moyenne("etudiants.csv")
