@@ -1,0 +1,20 @@
+#ma ligne de commentaire
+#################################################
+#ma ligne de commentaire
+Entrées / Sorties : Fichier
+#ma ligne de commentaire
+#################################################
+#ma ligne de commentaire
+
+#ma ligne de commentaire
+1. Parcourir l'ensemble des lignes d'un fichier rajouter un commentaire
+#ma ligne de commentaire
+apres chaque ligne.
+#ma ligne de commentaire
+
+#ma ligne de commentaire
+
+#ma ligne de commentaire
+2. A partir d'un fichier texte, on souhaite calculer le nombre de lignes,
+#ma ligne de commentaire
+de mots et de caractères du texte.
