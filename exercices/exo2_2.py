@@ -40,6 +40,6 @@ def format_csv(fichier):
                 resultat[key] = values
         return resultat
     except:
-      print("Fichier de d'entrée introuvable !")
+      print("Fichier d'entrée introuvable !")
         
 calcul_moyenne("etudiants.csv")
